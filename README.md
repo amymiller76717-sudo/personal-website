@@ -40,6 +40,7 @@ npm run build:pages
 - `docs/部署手册.md`
 - `docs/国内访问实测表.md`
 - `docs/Vercel注册后部署清单.md`
+- `docs/EdgeOne免费部署清单.md`
 
 ## 当前远程仓库
 
