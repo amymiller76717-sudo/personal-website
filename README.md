@@ -29,6 +29,12 @@ npm run build
 
 构建产物在 `dist/`，可部署到 Vercel、Cloudflare Pages、阿里云 OSS 或腾讯云 COS。
 
+GitHub Pages 临时部署构建：
+
+```powershell
+npm run build:pages
+```
+
 ## 文档
 
 - `docs/部署手册.md`
@@ -38,4 +44,6 @@ npm run build
 ## 当前远程仓库
 
 - GitHub：`https://github.com/amymiller76717-sudo/personal-website`
-- 当前仓库先保持私有；Vercel 可以通过 GitHub 授权读取私有仓库并部署。
+- GitHub Pages 临时地址：`https://amymiller76717-sudo.github.io/personal-website/`
+- 当前仓库已公开，用于 GitHub Pages 临时发布。
+- 当前 Vercel 账号需要官方验证，临时先用 GitHub Pages。
