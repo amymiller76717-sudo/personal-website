@@ -33,3 +33,9 @@ npm run build
 
 - `docs/部署手册.md`
 - `docs/国内访问实测表.md`
+- `docs/Vercel注册后部署清单.md`
+
+## 当前远程仓库
+
+- GitHub：`https://github.com/amymiller76717-sudo/personal-website`
+- 当前仓库先保持私有；Vercel 可以通过 GitHub 授权读取私有仓库并部署。
