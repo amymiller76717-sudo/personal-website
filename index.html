@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="个人网站静态站第一版，用于承载个人介绍、项目、文章和小工具入口。"
+    />
+    <title>个人网站实验站</title>
+    <link rel="icon" href="./favicon.svg" />
+    <script type="module" crossorigin src="/personal-website/assets/index-CBBds3kf.js"></script>
+    <link rel="stylesheet" crossorigin href="/personal-website/assets/index-Cr_RmxWo.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到首页">个人网站实验站</a>
+      <nav aria-label="主导航">
+        <a href="#projects">项目</a>
+        <a href="#writing">文章</a>
+        <a href="#tools">工具</a>
+        <a href="#deploy">部署</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Static site v0.1</p>
+          <h1 id="hero-title">个人网站实验站</h1>
+          <p class="lead">
+            一个先跑通发布流程的轻量静态站。当前只放个人介绍、项目入口、文章入口和小工具入口，后续可迁移到 Vercel、Cloudflare Pages、阿里云 OSS 或腾讯云 COS。
+          </p>
+          <div class="hero-actions" aria-label="主要入口">
+            <a class="button primary" href="#deploy">查看部署状态</a>
+            <a class="button secondary" href="#projects">浏览项目入口</a>
+          </div>
+        </div>
+        <img
+          class="hero-visual"
+          src="./site-map.svg"
+          alt="静态网站从本地构建到托管、域名和 HTTPS 的流程图"
+          width="520"
+          height="360"
+        />
+      </section>
+
+      <section class="status-strip" aria-label="当前状态">
+        <article>
+          <span>形态</span>
+          <strong>静态网站</strong>
+        </article>
+        <article>
+          <span>输出</span>
+          <strong>dist/</strong>
+        </article>
+        <article>
+          <span>优先部署</span>
+          <strong>Vercel</strong>
+        </article>
+        <article>
+          <span>长期国内</span>
+          <strong>OSS / COS</strong>
+        </article>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">项目入口</h2>
+        </div>
+        <div class="content-grid">
+          <article class="content-card">
+            <span class="label">工具</span>
+            <h3>药品库存记录</h3>
+            <p>本地优先 PWA，用于库存、剩余天数、核对节点和备份，不做医疗建议。</p>
+          </article>
+          <article class="content-card">
+            <span class="label">学习</span>
+            <h3>个人学习辅助系统</h3>
+            <p>围绕大学学习、技术学习、兴趣学习和长期知识管理展开。</p>
+          </article>
+          <article class="content-card">
+            <span class="label">写作</span>
+            <h3>Vibe Writing</h3>
+            <p>承载博客、方法论、公司内容、会议材料和对外表达。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="writing" class="section split" aria-labelledby="writing-title">
+        <div class="section-heading">
+          <p class="eyebrow">Writing</p>
+          <h2 id="writing-title">文章入口</h2>
+        </div>
+        <div class="plain-panel">
+          <p>
+            第一版先保留为文章索引。后续可以接入 Markdown、Astro 内容集合或静态生成器；只要最终能输出静态文件，就不影响部署平台迁移。
+          </p>
+          <ul class="link-list">
+            <li><a href="#deploy">从静态站开始搭个人网站</a></li>
+            <li><a href="#tools">个人工具如何放进网站</a></li>
+            <li><a href="#projects">项目入口如何组织</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="tools" class="section" aria-labelledby="tools-title">
+        <div class="section-heading">
+          <p class="eyebrow">Tools</p>
+          <h2 id="tools-title">小工具入口</h2>
+        </div>
+        <div class="content-grid compact">
+          <article class="content-card">
+            <h3>静态页面</h3>
+            <p>适合个人介绍、文章、作品集和资源索引。</p>
+          </article>
+          <article class="content-card">
+            <h3>纯前端工具</h3>
+            <p>适合本地计算、本地存储、导入导出和 PWA。</p>
+          </article>
+          <article class="content-card">
+            <h3>后端功能</h3>
+            <p>先不做。需要登录、评论或数据库时再单独扩展。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="deploy" class="section deploy-section" aria-labelledby="deploy-title">
+        <div class="section-heading">
+          <p class="eyebrow">Deployment</p>
+          <h2 id="deploy-title">部署路线</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>01</span>
+            <h3>本地构建</h3>
+            <p>运行构建命令，生成标准静态输出目录。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>先上 Vercel</h3>
+            <p>连接 Git 仓库，使用默认 HTTPS 地址快速上线。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>国内实测</h3>
+            <p>用手机流量和家庭网络记录可访问性。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>迁移国内云</h3>
+            <p>内容稳定后，再处理域名、备案、OSS/COS 和 CDN。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>个人网站实验站</span>
+      <span>更新年份：<span id="year">2026</span></span>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+  <title id="title">静态网站部署流程</title>
+  <desc id="desc">从本地文件构建到托管平台、域名和 HTTPS 的流程图。</desc>
+  <rect width="520" height="360" rx="8" fill="#ffffff" />
+  <rect x="34" y="38" width="452" height="284" rx="8" fill="#f6f7f9" stroke="#d7dde5" />
+  <g fill="#111827" font-family="Inter, Microsoft YaHei, sans-serif" letter-spacing="0">
+    <text x="58" y="78" font-size="22" font-weight="800">静态网站发布路径</text>
+    <text x="58" y="104" font-size="13" fill="#667085">同一套 dist/ 可以迁移到不同托管平台</text>
+  </g>
+  <g>
+    <rect x="58" y="138" width="88" height="68" rx="8" fill="#ffffff" stroke="#cfd6df" />
+    <text x="82" y="166" font-size="14" font-weight="800" fill="#111827" font-family="Inter, Microsoft YaHei, sans-serif">本地</text>
+    <text x="74" y="188" font-size="12" fill="#667085" font-family="Inter, Microsoft YaHei, sans-serif">HTML/CSS</text>
+  </g>
+  <path d="M156 172h42" stroke="#667085" stroke-width="2" />
+  <path d="M198 172l-8-6v12z" fill="#667085" />
+  <g>
+    <rect x="208" y="138" width="88" height="68" rx="8" fill="#ffffff" stroke="#cfd6df" />
+    <text x="232" y="166" font-size="14" font-weight="800" fill="#111827" font-family="Inter, Microsoft YaHei, sans-serif">构建</text>
+    <text x="235" y="188" font-size="12" fill="#667085" font-family="Inter, Microsoft YaHei, sans-serif">dist/</text>
+  </g>
+  <path d="M306 172h42" stroke="#667085" stroke-width="2" />
+  <path d="M348 172l-8-6v12z" fill="#667085" />
+  <g>
+    <rect x="358" y="138" width="88" height="68" rx="8" fill="#ffffff" stroke="#cfd6df" />
+    <text x="382" y="166" font-size="14" font-weight="800" fill="#111827" font-family="Inter, Microsoft YaHei, sans-serif">托管</text>
+    <text x="374" y="188" font-size="12" fill="#667085" font-family="Inter, Microsoft YaHei, sans-serif">Vercel/CDN</text>
+  </g>
+  <g>
+    <rect x="98" y="246" width="324" height="42" rx="21" fill="#e0f2f1" />
+    <text x="142" y="272" font-size="14" font-weight="800" fill="#0f766e" font-family="Inter, Microsoft YaHei, sans-serif">域名 + HTTPS + 国内访问实测</text>
+  </g>
+</svg>
