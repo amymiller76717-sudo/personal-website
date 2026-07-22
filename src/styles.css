@@ -250,6 +250,24 @@ h3 {
   padding: 24px;
 }
 
+.resource-card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.resource-card > div:first-child {
+  max-width: 56ch;
+}
+
+.resource-actions {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .link-list {
   display: grid;
   gap: 12px;
@@ -336,6 +354,11 @@ footer {
   .timeline,
   .split {
     grid-template-columns: 1fr;
+  }
+
+  .resource-card {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .section {
